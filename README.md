@@ -11,7 +11,7 @@ Choose skills view based on [SKTagView](https://github.com/zsk425/SKTagView). Wi
 
 # How to use
 Drag `Lib` folder to you project. Then `#import "SKTagView.h"`,`#import "HexColors.h"`. For more details please check out the demo code.<br>
-将`Lib`文件夹推入你的的项目，然后`#import "SKTagView.h"`,`#import "HexColors.h"`。如果要了解更详细的内容请查看Demo中的代码。
+将`Lib`文件夹拖入你的的项目，然后`#import "SKTagView.h"`,`#import "HexColors.h"`。如果要了解更详细的内容请查看Demo中的代码。
 
 #Requirements
 - Xcode 7.0 or greater
