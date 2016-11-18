@@ -13,6 +13,7 @@
 @interface ViewController ()<UIAlertViewDelegate>
 @property (strong, nonatomic) SKTagView *tagView;
 @property (strong, nonatomic) NSArray *colors;
+@property(nonatomic,assign)NSUInteger originalButtonCount;
 -(void)dl_setupTagView;
 -(void)dl_configTag:(SKTag*)tag withIndex:(NSUInteger)index;
 @end
@@ -45,8 +46,9 @@
     self.tagView.frame = self.view.bounds;
     [self.view addSubview:self.tagView];
     
-    
-    [@[@"+ 添加",@"Python", @"Javascript", @"Python", @"Swift", @"Go", @"Objective-C", @"C", @"PHP"] enumerateObjectsUsingBlock: ^(NSString *text, NSUInteger idx, BOOL *stop) {
+    NSArray *tagsArray = @[@"+ 添加",@"Python", @"Javascript", @"Python", @"Swift", @"Go", @"Objective-C", @"C", @"PHP"];
+    self.originalButtonCount = tagsArray.count;
+    [tagsArray enumerateObjectsUsingBlock: ^(NSString *text, NSUInteger idx, BOOL *stop) {
         SKTag *tag = [SKTag tagWithText: text];
         if (idx == 0) {
             tag.textColor = [UIColor hx_colorWithHexString: self.colors[idx % self.colors.count]];
@@ -77,8 +79,9 @@
 {
     if (buttonIndex == 1) {
         SKTag *tag = [SKTag tagWithText: [alertView textFieldAtIndex:0].text];
-        [self dl_configTag:tag withIndex:1];
+        [self dl_configTag:tag withIndex:self.originalButtonCount];
         [self.tagView insertTag:tag atIndex:1];
+        self.originalButtonCount ++ ;
     }
 }
 
