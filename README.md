@@ -1,1 +1,1 @@
-![](https://github.com/Liqiankun/DLSkillTagView/raw/master/dlSkillTagView.gif)
+![](https://github.com/Liqiankun/DLSkillTagView/raw/master/skilltagview.gif)
