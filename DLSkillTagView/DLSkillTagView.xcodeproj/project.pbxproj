@@ -15,9 +15,10 @@
 		AAB977B41DDDBF5100A3CF89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAB977B21DDDBF5100A3CF89 /* LaunchScreen.storyboard */; };
 		AAB977BF1DDDBF5100A3CF89 /* DLSkillTagViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB977BE1DDDBF5100A3CF89 /* DLSkillTagViewTests.m */; };
 		AAB977CA1DDDBF5100A3CF89 /* DLSkillTagViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB977C91DDDBF5100A3CF89 /* DLSkillTagViewUITests.m */; };
-		AAB977DE1DDDBF7C00A3CF89 /* SKTag.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB977D91DDDBF7C00A3CF89 /* SKTag.m */; };
-		AAB977DF1DDDBF7C00A3CF89 /* SKTagButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB977DB1DDDBF7C00A3CF89 /* SKTagButton.m */; };
-		AAB977E01DDDBF7C00A3CF89 /* SKTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB977DD1DDDBF7C00A3CF89 /* SKTagView.m */; };
+		AAB977EC1DDE960600A3CF89 /* HexColors.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB977E41DDE960600A3CF89 /* HexColors.m */; };
+		AAB977ED1DDE960600A3CF89 /* SKTag.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB977E71DDE960600A3CF89 /* SKTag.m */; };
+		AAB977EE1DDE960600A3CF89 /* SKTagButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB977E91DDE960600A3CF89 /* SKTagButton.m */; };
+		AAB977EF1DDE960600A3CF89 /* SKTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB977EB1DDE960600A3CF89 /* SKTagView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,12 +55,14 @@
 		AAB977C51DDDBF5100A3CF89 /* DLSkillTagViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DLSkillTagViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAB977C91DDDBF5100A3CF89 /* DLSkillTagViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLSkillTagViewUITests.m; sourceTree = "<group>"; };
 		AAB977CB1DDDBF5100A3CF89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AAB977D81DDDBF7C00A3CF89 /* SKTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTag.h; sourceTree = "<group>"; };
-		AAB977D91DDDBF7C00A3CF89 /* SKTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTag.m; sourceTree = "<group>"; };
-		AAB977DA1DDDBF7C00A3CF89 /* SKTagButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTagButton.h; sourceTree = "<group>"; };
-		AAB977DB1DDDBF7C00A3CF89 /* SKTagButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTagButton.m; sourceTree = "<group>"; };
-		AAB977DC1DDDBF7C00A3CF89 /* SKTagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTagView.h; sourceTree = "<group>"; };
-		AAB977DD1DDDBF7C00A3CF89 /* SKTagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTagView.m; sourceTree = "<group>"; };
+		AAB977E31DDE960600A3CF89 /* HexColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HexColors.h; sourceTree = "<group>"; };
+		AAB977E41DDE960600A3CF89 /* HexColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HexColors.m; sourceTree = "<group>"; };
+		AAB977E61DDE960600A3CF89 /* SKTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTag.h; sourceTree = "<group>"; };
+		AAB977E71DDE960600A3CF89 /* SKTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTag.m; sourceTree = "<group>"; };
+		AAB977E81DDE960600A3CF89 /* SKTagButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTagButton.h; sourceTree = "<group>"; };
+		AAB977E91DDE960600A3CF89 /* SKTagButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTagButton.m; sourceTree = "<group>"; };
+		AAB977EA1DDE960600A3CF89 /* SKTagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTagView.h; sourceTree = "<group>"; };
+		AAB977EB1DDE960600A3CF89 /* SKTagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTagView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +113,7 @@
 		AAB977A31DDDBF5100A3CF89 /* DLSkillTagView */ = {
 			isa = PBXGroup;
 			children = (
-				AAB977D71DDDBF7C00A3CF89 /* SKTagView */,
+				AAB977E11DDE960600A3CF89 /* Lib */,
 				AAB977A71DDDBF5100A3CF89 /* AppDelegate.h */,
 				AAB977A81DDDBF5100A3CF89 /* AppDelegate.m */,
 				AAB977AA1DDDBF5100A3CF89 /* ViewController.h */,
@@ -150,15 +153,33 @@
 			path = DLSkillTagViewUITests;
 			sourceTree = "<group>";
 		};
-		AAB977D71DDDBF7C00A3CF89 /* SKTagView */ = {
+		AAB977E11DDE960600A3CF89 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				AAB977D81DDDBF7C00A3CF89 /* SKTag.h */,
-				AAB977D91DDDBF7C00A3CF89 /* SKTag.m */,
-				AAB977DA1DDDBF7C00A3CF89 /* SKTagButton.h */,
-				AAB977DB1DDDBF7C00A3CF89 /* SKTagButton.m */,
-				AAB977DC1DDDBF7C00A3CF89 /* SKTagView.h */,
-				AAB977DD1DDDBF7C00A3CF89 /* SKTagView.m */,
+				AAB977E21DDE960600A3CF89 /* Classes */,
+				AAB977E51DDE960600A3CF89 /* SKTagView */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		AAB977E21DDE960600A3CF89 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AAB977E31DDE960600A3CF89 /* HexColors.h */,
+				AAB977E41DDE960600A3CF89 /* HexColors.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		AAB977E51DDE960600A3CF89 /* SKTagView */ = {
+			isa = PBXGroup;
+			children = (
+				AAB977E61DDE960600A3CF89 /* SKTag.h */,
+				AAB977E71DDE960600A3CF89 /* SKTag.m */,
+				AAB977E81DDE960600A3CF89 /* SKTagButton.h */,
+				AAB977E91DDE960600A3CF89 /* SKTagButton.m */,
+				AAB977EA1DDE960600A3CF89 /* SKTagView.h */,
+				AAB977EB1DDE960600A3CF89 /* SKTagView.m */,
 			);
 			path = SKTagView;
 			sourceTree = "<group>";
@@ -297,11 +318,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAB977DE1DDDBF7C00A3CF89 /* SKTag.m in Sources */,
+				AAB977EE1DDE960600A3CF89 /* SKTagButton.m in Sources */,
+				AAB977ED1DDE960600A3CF89 /* SKTag.m in Sources */,
 				AAB977AC1DDDBF5100A3CF89 /* ViewController.m in Sources */,
+				AAB977EC1DDE960600A3CF89 /* HexColors.m in Sources */,
+				AAB977EF1DDE960600A3CF89 /* SKTagView.m in Sources */,
 				AAB977A91DDDBF5100A3CF89 /* AppDelegate.m in Sources */,
-				AAB977E01DDDBF7C00A3CF89 /* SKTagView.m in Sources */,
-				AAB977DF1DDDBF7C00A3CF89 /* SKTagButton.m in Sources */,
 				AAB977A61DDDBF5100A3CF89 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -451,7 +473,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 27XVM2QM7Z;
 				INFOPLIST_FILE = DLSkillTagView/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = davidlee.DLSkillTagView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -464,7 +486,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 27XVM2QM7Z;
 				INFOPLIST_FILE = DLSkillTagView/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = davidlee.DLSkillTagView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -536,6 +558,7 @@
 				AAB977D01DDDBF5100A3CF89 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AAB977D11DDDBF5100A3CF89 /* Build configuration list for PBXNativeTarget "DLSkillTagViewTests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +567,7 @@
 				AAB977D31DDDBF5100A3CF89 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AAB977D41DDDBF5100A3CF89 /* Build configuration list for PBXNativeTarget "DLSkillTagViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -552,6 +576,7 @@
 				AAB977D61DDDBF5100A3CF89 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

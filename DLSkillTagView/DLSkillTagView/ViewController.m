@@ -8,20 +8,20 @@
 
 #import "ViewController.h"
 #import "SKTagView.h"
-
+#import "HexColors.h"
 
 @interface ViewController ()<UIAlertViewDelegate>
 @property (strong, nonatomic) SKTagView *tagView;
 @property (strong, nonatomic) NSArray *colors;
 -(void)dl_setupTagView;
--(void)dl_configTag;
+-(void)dl_configTag:(SKTag*)tag withIndex:(NSUInteger)index;
 @end
 
 @implementation ViewController
 #pragma mark - Lifecycle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.colors = @[@"#7ecef4", @"#84ccc9", @"#88abda", @"#7dc1dd", @"#b6b8de"];
     [self dl_setupTagView];
 }
 
@@ -46,31 +46,30 @@
     [self.view addSubview:self.tagView];
     
     
-    [@[@"Python", @"Javascript", @"Python", @"Swift", @"Go", @"Objective-C", @"C", @"PHP"] enumerateObjectsUsingBlock: ^(NSString *text, NSUInteger idx, BOOL *stop) {
+    [@[@"+ 添加",@"Python", @"Javascript", @"Python", @"Swift", @"Go", @"Objective-C", @"C", @"PHP"] enumerateObjectsUsingBlock: ^(NSString *text, NSUInteger idx, BOOL *stop) {
         SKTag *tag = [SKTag tagWithText: text];
         if (idx == 0) {
-            tag.text = @"  ";
-            tag.padding = UIEdgeInsetsMake(0, 0, 0, 0);
-            UIImage *image = [UIImage imageNamed:@"ft_newLS_addSkill"];
-            NSLog(@"%@",NSStringFromCGSize(image.size));
-            tag.bgImg = image;
+            tag.textColor = [UIColor hx_colorWithHexString: self.colors[idx % self.colors.count]];
+            tag.borderColor = tag.textColor;
+            tag.borderWidth = 1;
+            tag.fontSize = 15;
+            tag.padding = UIEdgeInsetsMake(13.5, 12.5, 13.5, 12.5);
+            tag.nrmColor = [UIColor clearColor];
+            tag.cornerRadius = 5;
         }else{
-           [self dl_configTag:tag];
+           [self dl_configTag:tag withIndex:idx];
         }
         [self.tagView addTag:tag];
     }];
 }
 
--(void)dl_configTag:(SKTag *)tag
+-(void)dl_configTag:(SKTag *)tag withIndex:(NSUInteger)index
 {
-    tag.textColor = [UIColor blueColor];
-    tag.slcTextColor = [UIColor whiteColor];
+    tag.textColor = [UIColor whiteColor];
     tag.fontSize = 15;
-    tag.padding = UIEdgeInsetsMake(11, 12.5, 11, 12.5);
-    tag.slcColor = [UIColor blueColor];
-    tag.nrmColor = [UIColor clearColor];
-    tag.borderWidth = 1;
-    tag.borderColor = [UIColor blueColor];
+    tag.padding = UIEdgeInsetsMake(13.5, 12.5, 13.5, 12.5);
+    tag.nrmColor = [UIColor hx_colorWithHexString: self.colors[index % self.colors.count]];
+    tag.cornerRadius = 5;
 }
 
 #pragma mark - UIAlertViewDelegate
@@ -78,7 +77,7 @@
 {
     if (buttonIndex == 1) {
         SKTag *tag = [SKTag tagWithText: [alertView textFieldAtIndex:0].text];
-        [self dl_configTag:tag];
+        [self dl_configTag:tag withIndex:1];
         [self.tagView insertTag:tag atIndex:1];
     }
 }
