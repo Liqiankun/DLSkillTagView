@@ -14,7 +14,7 @@
 @property (strong, nonatomic) SKTagView *tagView;
 @property (strong, nonatomic) NSArray *colors;
 -(void)dl_setupTagView;
--(void)ft_configTag;
+-(void)dl_configTag;
 @end
 
 @implementation ViewController
@@ -55,13 +55,13 @@
             NSLog(@"%@",NSStringFromCGSize(image.size));
             tag.bgImg = image;
         }else{
-           [self ft_configTag:tag];
+           [self dl_configTag:tag];
         }
         [self.tagView addTag:tag];
     }];
 }
 
--(void)ft_configTag:(SKTag *)tag
+-(void)dl_configTag:(SKTag *)tag
 {
     tag.textColor = [UIColor blueColor];
     tag.slcTextColor = [UIColor whiteColor];
@@ -78,7 +78,7 @@
 {
     if (buttonIndex == 1) {
         SKTag *tag = [SKTag tagWithText: [alertView textFieldAtIndex:0].text];
-        [self ft_configTag:tag];
+        [self dl_configTag:tag];
         [self.tagView insertTag:tag atIndex:1];
     }
 }
