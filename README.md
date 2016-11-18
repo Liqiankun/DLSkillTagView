@@ -18,4 +18,4 @@ Drag `Lib` folder to your project. Then `#import "SKTagView.h"`,`#import "HexC
 - iOS8.0(manually only) or greater
 
 #Author
-David Lee, qianlunli@yahoo.com
+David Lee, qiankunli@yahoo.com
